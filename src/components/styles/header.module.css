@@ -4,9 +4,11 @@
     font-weight: bold;
     padding: 10px;
     place-items: center;
-    background: var( --bg-gradient );
+    background: var(--bg-gradient);
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
-
 .input {
     background: rgba(123, 121, 121, 0.267);
     padding: 10px;
@@ -14,4 +16,8 @@
     margin: 10px;
     border: none;
     width: 88vw;
+    color: #fff;
+}
+.input::placeholder {
+    color: #fff;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import styles from './header.module.css';
+// * Styles
+import styles from './styles/header.module.css';
 
 type HeaderProps = {
     query: string;
@@ -12,6 +13,7 @@ const Header = ({ query, setQuery }: HeaderProps ) => {
         <header className={ styles.header }>
             <input
                 type="text"
+                onChange={(event) => setQuery( event.target.value )}
                 value={ query }
                 className={ styles.input }
                 placeholder='Search a Pokemon' />
